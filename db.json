@@ -1,124 +1,70 @@
 {
-    "estudantes": [{
-            "id": 2,
-            "nome": "Tobias",
-            "matricula": 2,
-            "nota": 10,
-            "materia": "Matematica Discreta",
-            "semestre": 1
-        },
-        {
-            "id": 3,
-            "nome": "Bruno",
-            "matricula": 3,
-            "nota": 9,
-            "materia": "Algoritmo",
-            "semestre": 1
-        },
-        {
-            "id": 4,
-            "nome": "Carlos",
-            "matricula": 4,
-            "nota": 8,
-            "materia": "Pla",
-            "semestre": 3
-        },
-        {
-            "id": 5,
-            "nome": "Eduarda",
-            "matricula": 5,
-            "nota": 8,
-            "materia": "S.O",
-            "semestre": 3
-        },
-        {
-            "id": 6,
-            "nome": "Jessica",
-            "matricula": 6,
-            "nota": 7,
-            "materia": "Banco de Dados",
-            "semestre": 2
-        },
-        {
-            "id": 7,
-            "nome": "Larissa",
-            "matricula": 7,
-            "nota": 6,
-            "materia": "Ingles |||",
-            "semestre": 3
-        },
-        {
-            "id": 8,
-            "nome": "Larissa",
-            "matricula": 8,
-            "nota": 6,
-            "materia": "Ingles |||",
-            "semestre": 3
-        },
-        {
-            "id": 9,
-            "nome": "Rafael",
-            "matricula": 9,
-            "nota": 8,
-            "materia": "Calculo",
-            "semestre": 2
-        },
-        {
-            "id": 10,
-            "nome": "Raquel",
-            "matricula": 10,
-            "nota": 8,
-            "materia": "Eletiva",
-            "semestre": 1
-        }
-    ],
-    "professores": [{
-            "id": 1,
-            "nome": "Astolfo",
-            "curso": "ads",
-            "matricula": 563
-        },
-        {
-            "id": 2,
-            "nome": "Jorge",
-            "curso": "ads",
-            "matricula": 221
-        },
-        {
-            "id": 4,
-            "nome": "Marquinhos",
-            "curso": "ads",
-            "matricula": 171
-        },
-        {
-            "id": 5,
-            "nome": "Maria",
-            "curso": "ads",
-            "matricula": 300
-        },
-        {
-            "id": 6,
-            "nome": "Bruna",
-            "curso": "ads",
-            "matricula": 438
-        },
-        {
-            "id": 7,
-            "nome": "Vitor",
-            "curso": "ads",
-            "matricula": 219
-        },
-        {
-            "id": 8,
-            "nome": "Rafaela",
-            "curso": "ads",
-            "matricula": 138
-        },
-        {
-            "id": 9,
-            "nome": "Paula",
-            "curso": "ads",
-            "matricula": 993
-        }
-    ]
+  "estudantes": [
+    {
+      "id": 9,
+      "nome": "Rafael",
+      "matricula": 9,
+      "nota": 8,
+      "materia": "Calculo",
+      "semestre": 2
+    },
+    {
+      "nome": "Jé",
+      "matricula": "140811",
+      "materia": "Estatistica",
+      "nota": "12",
+      "semestre": "6",
+      "id": 10
+    }
+  ],
+  "professores": [
+    {
+      "id": 1,
+      "nome": "Astolfo",
+      "curso": "ads",
+      "matricula": 563
+    },
+    {
+      "id": 2,
+      "nome": "Jorge",
+      "curso": "ads",
+      "matricula": 221
+    },
+    {
+      "id": 4,
+      "nome": "Marquinhos",
+      "curso": "ads",
+      "matricula": 171
+    },
+    {
+      "id": 5,
+      "nome": "Maria",
+      "curso": "ads",
+      "matricula": 300
+    },
+    {
+      "id": 6,
+      "nome": "Bruna",
+      "curso": "ads",
+      "matricula": 438
+    },
+    {
+      "id": 7,
+      "nome": "Vitor",
+      "curso": "ads",
+      "matricula": 219
+    },
+    {
+      "id": 8,
+      "nome": "Rafaela",
+      "curso": "ads",
+      "matricula": 138
+    },
+    {
+      "id": 9,
+      "nome": "Paula",
+      "curso": "ads",
+      "matricula": 993
+    }
+  ]
 }

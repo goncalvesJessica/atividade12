@@ -1,17 +1,21 @@
-<div *ngIf="estudante">
+<div>
     <h3>{{estudante.nome}}</h3>
+    <input type="hidden" [(ngModel)]="estudante.id" />
+
     <label class="form-label" for="estudante-nome">Nome: </label>
-    <input id="estudante-nome" class="form-control" [(ngModel)]="estudante.nome" placeholder="nome">
+    <input id="estudante-nome" required class="form-control" [(ngModel)]="estudante.nome" placeholder="nome">
 
     <label class="form-label" for="estudante-matricula">Matrícula: </label>
-    <input id="estudante-matricula" class="form-control" [(ngModel)]="estudante.matricula" placeholder="Matricula">
+    <input id="estudante-matricula" required class="form-control" [(ngModel)]="estudante.matricula" placeholder="Matricula">
 
     <label class="form-label" for="estudante-materia">Matéria: </label>
-    <input id="estudante-materia" class="form-control" [(ngModel)]="estudante.materia" placeholder="matéria">
+    <input id="estudante-materia" required class="form-control" [(ngModel)]="estudante.materia" placeholder="matéria">
 
     <label class="form-label" for="estudante-nota">Nota: </label>
-    <input id="estudante-nota" class="form-control" [(ngModel)]="estudante.nota" placeholder="nota">
+    <input id="estudante-nota" required class="form-control" [(ngModel)]="estudante.nota" placeholder="nota">
 
     <label class="form-label" for="estudante-semestre">Semestre: </label>
-    <input id="estudante-semestre" class="form-control" [(ngModel)]="estudante.semestre" placeholder="semestre">
+
+    <input id="estudante-semestre" required class="form-control" [(ngModel)]="estudante.semestre" placeholder="semestre">
+    <button (click)="salvar()">Salvar</button> <button (click)="deleteEstudantes()">Excluir</button>
 </div>

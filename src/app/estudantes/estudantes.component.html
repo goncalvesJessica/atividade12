@@ -1,18 +1,25 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h3>Dados</h3>
+<div class="container-fluid">
+    <h3><span class="badge bg-primary">Cadastro</span></h3>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-            <ul class="list-group">
-                <li class="list-group-item" *ngFor="let estudante of estudantes">
-                    <div [class.selected]="estudante === selectedEstudante" (click)="onSelect(estudante)">
-                        <span class="badge bg-primary">{{estudante.id}}</span> {{estudante.nome}}
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="col">
-            <app-estudante-detail [estudante]="selectedEstudante"></app-estudante-detail>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Dados</h3>
+
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let estudanteItem of estudantes">
+                        <div>
+                            <a href="/estudantes/{{estudanteItem.id}}"><span class="badge bg-primary">{{estudanteItem.id}}</span> {{estudanteItem.nome}}</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <app-estudante-detail></app-estudante-detail>
+            </div>
         </div>
     </div>
-</div>
+    <form>

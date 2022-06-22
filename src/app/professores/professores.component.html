@@ -1,18 +1,24 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h3>Dados</h3>
+<div class="container-fluid">
+    <h3><span class="badge bg-primary">Cadastro</span></h3>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-            <ul class="list-group">
-                <li class="list-group-item" *ngFor="let professor of professores">
-                    <div [class.selected]="professor === selectedProfessor" (click)="onSelect(professor)">
-                        <span class="badge bg-primary">{{professor.id}}</span> {{professor.nome}}
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="col">
-            <app-professor-detail [professor]="selectedProfessor"></app-professor-detail>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Dados</h3>
+
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let professor of professores">
+                        <div [class.selected]="professor === selectedProfessor" (click)="onSelect(professor)">
+                            <span class="badge bg-primary">{{professor.id}}</span> {{professor.nome}}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <app-professor-detail [professor]="selectedProfessor"></app-professor-detail>
+            </div>
         </div>
     </div>
-</div>
