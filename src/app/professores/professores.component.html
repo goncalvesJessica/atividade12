@@ -11,14 +11,14 @@
 
                 <ul class="list-group">
                     <li class="list-group-item" *ngFor="let professor of professores">
-                        <div [class.selected]="professor === selectedProfessor" (click)="onSelect(professor)">
-                            <span class="badge bg-primary">{{professor.id}}</span> {{professor.nome}}
+                        <div>
+                            <a href="/professor/{{professor.id}}"><span class="badge bg-primary">{{professor.id}}</span> {{professor.nome}}</a>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="col">
-                <app-professor-detail [professor]="selectedProfessor"></app-professor-detail>
+                <app-professor-detail></app-professor-detail>
             </div>
         </div>
     </div>

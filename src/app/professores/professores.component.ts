@@ -8,21 +8,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './professores.component.html',
   styleUrls: ['./professores.component.css']
 })
+
 export class ProfessoresComponent implements OnInit {
 
   professores: Professor[] = [];
-  selectedProfessor?: Professor;
 
-  constructor(private professorService: ProfessorService, private messageService: MessageService) { }
+  constructor(private professorService: ProfessorService) { }
 
   ngOnInit(): void {
     this.getProfessores();
-  }
-
-  onSelect(professor: Professor): void {
-    this.selectedProfessor = professor;
-    this.messageService.clear();
-    this.messageService.add(`Professor ${professor.nome} selecionado!`);
   }
 
   getProfessores(): void {

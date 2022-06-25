@@ -1,6 +1,6 @@
-export interface Professor {
-  matricula: number;
-  nome: string;
-  id: number;
-  curso: string; 
+export class Professor {
+  matricula?: number;
+  nome?: string;
+  id?: number;
+  curso?: string;
 }
